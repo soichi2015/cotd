@@ -49,11 +49,11 @@ if ( empty($_SESSION['SELECTOR']) ) {
         $ini_array = parse_ini_file($ini_file);
         $_SESSION['SELECTOR'] = $ini_array['selector'];
     } elseif ( $_SESSION['V2'] == 'true' )  {
-       $_SESSION['SELECTOR'] = 'cats';
-#       $_SESSION['SELECTOR'] = 'cities';
+#       $_SESSION['SELECTOR'] = 'cats';
+       $_SESSION['SELECTOR'] = 'cities';
     } else {
-        $_SESSION['SELECTOR'] = 'cats';
-#        $_SESSION['SELECTOR'] = 'cities';
+#        $_SESSION['SELECTOR'] = 'cats';
+        $_SESSION['SELECTOR'] = 'cities';
     }
 
 }
